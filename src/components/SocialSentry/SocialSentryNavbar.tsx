@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+import logo from "@/assets/app_logo_new.png";
+
 const SocialSentryNavbar = () => {
     return (
         <motion.nav
@@ -16,7 +18,7 @@ const SocialSentryNavbar = () => {
                     {/* Logo */}
                     <div className="flex items-center gap-3">
                         <img
-                            src="/app_logo_new.png"
+                            src={logo}
                             alt="Social Sentry"
                             className="w-10 h-10 rounded-xl object-cover"
                         />
