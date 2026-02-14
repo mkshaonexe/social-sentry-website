@@ -30,6 +30,12 @@ const SocialSentryFooter = () => {
                         >
                             Watch Demo
                         </a>
+                        <a
+                            href="/privacy-policy"
+                            className="hover:text-foreground transition-colors"
+                        >
+                            Privacy Policy
+                        </a>
                     </div>
 
                     <p className="text-sm text-muted-foreground">
