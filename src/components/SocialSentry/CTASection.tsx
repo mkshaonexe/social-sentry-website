@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import { Shield, Play } from "lucide-react";
+import { Shield, Play, Chrome, Monitor } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const CTASection = () => {
@@ -32,10 +32,10 @@ const CTASection = () => {
                         relationship with technology.
                     </p>
 
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
                         <Button
                             size="lg"
-                            className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-10 py-6 text-lg glow-green-sm"
+                            className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg glow-green-sm w-full sm:w-auto"
                             asChild
                         >
                             <a
@@ -43,14 +43,42 @@ const CTASection = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <Play className="w-5 h-5 mr-2 fill-current" />
-                                Download Free
+                                <Play className="w-5 h-5 mr-2 fill-current shadow-sm" />
+                                Android App
+                            </a>
+                        </Button>
+                        <Button
+                            size="lg"
+                            className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg glow-green-sm w-full sm:w-auto"
+                            asChild
+                        >
+                            <a
+                                href="https://chromewebstore.google.com/detail/social-sentry-focus-mode/ochghidlhpajencdlhlponjpgpfaghii"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Chrome className="w-5 h-5 mr-2 drop-shadow-sm" />
+                                Chrome
+                            </a>
+                        </Button>
+                        <Button
+                            size="lg"
+                            className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg glow-green-sm w-full sm:w-auto"
+                            asChild
+                        >
+                            <a
+                                href="https://t.me/socialsentryapp/20"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Monitor className="w-5 h-5 mr-2 drop-shadow-sm" />
+                                Desktop
                             </a>
                         </Button>
                     </div>
 
                     <p className="text-sm text-muted-foreground mt-6">
-                        Free to use · No credit card required · Android only
+                        Free to use · No credit card required · Multi-platform support
                     </p>
                 </motion.div>
             </div>
