@@ -147,7 +147,7 @@ const HeroSection = () => {
                             initial={{ opacity: 0, x: -30 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: 0.8 }}
-                            className="absolute top-20 left-0 lg:-left-10"
+                            className="absolute z-20 top-20 left-0 lg:-left-10"
                         >
                             <motion.div
                                 animate={{ y: [0, -10, 0] }}
@@ -170,7 +170,7 @@ const HeroSection = () => {
                             initial={{ opacity: 0, x: 30 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: 1 }}
-                            className="absolute bottom-32 right-0 lg:-right-10"
+                            className="absolute z-20 bottom-32 right-0 lg:-right-10"
                         >
                             <motion.div
                                 animate={{ y: [0, -8, 0] }}
