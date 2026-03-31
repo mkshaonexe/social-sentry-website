@@ -1,5 +1,5 @@
-
 import { Shield } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const SocialSentryFooter = () => {
     return (
@@ -13,7 +13,12 @@ const SocialSentryFooter = () => {
                         <span className="text-xl font-bold">Social Sentry</span>
                     </div>
 
-                    <div className="flex items-center gap-8 text-sm text-muted-foreground">
+                    <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-sm text-muted-foreground">
+                        <Link to="/" className="hover:text-foreground transition-colors">Home</Link>
+                        <Link to="/pricing" className="hover:text-foreground transition-colors">Pricing</Link>
+                        <Link to="/about-us" className="hover:text-foreground transition-colors">About Us</Link>
+                        <Link to="/affiliate" className="hover:text-foreground transition-colors">Affiliate</Link>
+                        <Link to="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy</Link>
                         <a
                             href="https://play.google.com/store/apps/details?id=com.socialsentry.ai"
                             target="_blank"
@@ -21,20 +26,6 @@ const SocialSentryFooter = () => {
                             className="hover:text-foreground transition-colors"
                         >
                             Google Play
-                        </a>
-                        <a
-                            href="https://youtu.be/TAJFU-9kkK0?si=BdkdiZSqMi6b_ECu"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="hover:text-foreground transition-colors"
-                        >
-                            Watch Demo
-                        </a>
-                        <a
-                            href="/privacy-policy"
-                            className="hover:text-foreground transition-colors"
-                        >
-                            Privacy Policy
                         </a>
                     </div>
 

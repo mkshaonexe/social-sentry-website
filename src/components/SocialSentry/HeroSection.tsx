@@ -1,6 +1,5 @@
-
 import { motion } from "framer-motion";
-import { Shield, Play } from "lucide-react";
+import { Shield, Play, Monitor, Chrome } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import phoneMockup from "@/assets/phone-mockup.png";
 
@@ -80,36 +79,83 @@ const HeroSection = () => {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.5 }}
-                            className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+                            className="space-y-6"
                         >
-                            <Button
-                                size="lg"
-                                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg glow-green-sm"
-                                asChild
-                            >
-                                <a
-                                    href="https://play.google.com/store/apps/details?id=com.socialsentry.ai"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-lg mx-auto lg:mx-0">
+                                <Button
+                                    size="lg"
+                                    className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold h-auto py-4 rounded-2xl shadow-xl shadow-primary/20 group"
+                                    asChild
                                 >
-                                    <Play className="w-5 h-5 mr-2 fill-current" />
-                                    Install
-                                </a>
-                            </Button>
-                            <Button
-                                size="lg"
-                                variant="outline"
-                                className="border-border hover:bg-secondary font-semibold px-8 py-6 text-lg"
-                                asChild
-                            >
-                                <a
-                                    href="https://youtu.be/TAJFU-9kkK0?si=BdkdiZSqMi6b_ECu"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                    <a
+                                        href="https://play.google.com/store/apps/details?id=com.socialsentry.ai"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex flex-col items-start gap-0.5"
+                                    >
+                                        <div className="flex items-center gap-2">
+                                            <Play className="w-5 h-5 fill-current" />
+                                            <span>Get on Android</span>
+                                        </div>
+                                        <span className="text-[10px] opacity-70 font-normal">Available on Google Play</span>
+                                    </a>
+                                </Button>
+
+                                <Button
+                                    size="lg"
+                                    variant="outline"
+                                    className="border-border/50 hover:bg-secondary font-bold h-auto py-4 rounded-2xl backdrop-blur-sm"
+                                    asChild
                                 >
-                                    Demo
-                                </a>
-                            </Button>
+                                    <a
+                                        href="https://chromewebstore.google.com/detail/social-sentry-focus-mode/ochghidlhpajencdlhlponjpgpfaghii"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex flex-col items-start gap-0.5"
+                                    >
+                                        <div className="flex items-center gap-2">
+                                            <Chrome className="w-5 h-5" />
+                                            <span>Chrome Extension</span>
+                                        </div>
+                                        <span className="text-[10px] opacity-70 font-normal">Social Sentry Focus Mode</span>
+                                    </a>
+                                </Button>
+
+                                <Button
+                                    size="lg"
+                                    variant="outline"
+                                    className="border-border/50 hover:bg-secondary font-bold h-auto py-4 rounded-2xl backdrop-blur-sm"
+                                    asChild
+                                >
+                                    <a
+                                        href="https://t.me/socialsentryapp/20"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex flex-col items-start gap-0.5"
+                                    >
+                                        <div className="flex items-center gap-2">
+                                            <Monitor className="w-5 h-5" />
+                                            <span>Windows Desktop</span>
+                                        </div>
+                                        <span className="text-[10px] opacity-70 font-normal">Reclaim your PC focus</span>
+                                    </a>
+                                </Button>
+
+                                <Button
+                                    size="lg"
+                                    variant="ghost"
+                                    className="text-muted-foreground hover:text-primary font-semibold h-auto py-4 rounded-2xl"
+                                    asChild
+                                >
+                                    <a
+                                        href="https://youtu.be/TAJFU-9kkK0?si=BdkdiZSqMi6b_ECu"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Watch Demo Video
+                                    </a>
+                                </Button>
+                            </div>
                         </motion.div>
                     </motion.div>
 
