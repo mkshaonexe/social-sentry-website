@@ -1,6 +1,7 @@
 
 import heroBg from "@/assets/hero-bg.jpg";
 import { Users, Shield, Rocket } from "lucide-react";
+import SEOHead from "@/components/SEO/SEOHead";
 
 const AboutUs = () => {
     return (
@@ -13,6 +14,12 @@ const AboutUs = () => {
                 backgroundAttachment: 'fixed',
             }}
         >
+            <SEOHead 
+                title="About Us | Social Sentry's Mission"
+                description="Learn about Social Sentry's mission to combat social media addiction and doomscrolling. We protect teens, students, and professionals from short-form content traps using an advanced Accessibility engine and ML NSFW Shield."
+                keywords="about Social Sentry, mission, combat social media addiction, protect teens online, ML NSFW Shield, accessibility app blocker"
+                canonicalUrl="https://socialsentry.online/about-us"
+            />
             {/* Dark overlay */}
             <div className="fixed inset-0 bg-background/85 pointer-events-none" />
 

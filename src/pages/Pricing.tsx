@@ -1,6 +1,7 @@
 import ProFeaturesSection from "@/components/SocialSentry/ProFeaturesSection";
 import PricingSection from "@/components/SocialSentry/PricingSection";
 import heroBg from "@/assets/hero-bg.jpg";
+import SEOHead from "@/components/SEO/SEOHead";
 
 const Pricing = () => {
     return (
@@ -13,6 +14,12 @@ const Pricing = () => {
                 backgroundAttachment: 'fixed',
             }}
         >
+            <SEOHead 
+                title="Social Sentry PRO Pricing | Unlock Focus & Force Mode"
+                description="Upgrade to Social Sentry PRO via bKash to unlock Auto-Focus Schedules, Prime Mode, NSFW AI Shield, and the Scroll Limiter. Affordable plans for students."
+                keywords="Social Sentry PRO, buy app blocker, lifetime access app blocker, bKash subscription, unlock Force mode, unlock porn blocker"
+                canonicalUrl="https://socialsentry.online/pricing"
+            />
             {/* Dark overlay */}
             <div className="fixed inset-0 bg-background/85 pointer-events-none" />
 

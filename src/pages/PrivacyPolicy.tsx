@@ -1,9 +1,16 @@
 
 import { motion } from "framer-motion";
+import SEOHead from "@/components/SEO/SEOHead";
 
 const PrivacyPolicy = () => {
     return (
         <div className="min-h-screen bg-background text-foreground pt-24 pb-12 px-6">
+            <SEOHead 
+                title="Privacy Policy | Social Sentry App"
+                description="Read the privacy policy for Social Sentry. Learn how we protect your data, implement offline-first blocking, and ensure a secure digital wellbeing experience."
+                keywords="Social Sentry privacy policy, data protection, offline app blocker privacy"
+                canonicalUrl="https://socialsentry.online/privacy-policy"
+            />
             <div className="container mx-auto max-w-4xl">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
