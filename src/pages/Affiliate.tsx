@@ -2,6 +2,7 @@
 import heroBg from "@/assets/hero-bg.jpg";
 import { Handshake, DollarSign, BarChart3, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import SEOHead from "@/components/SEO/SEOHead";
 
 const Affiliate = () => {
     return (
@@ -14,6 +15,12 @@ const Affiliate = () => {
                 backgroundAttachment: 'fixed',
             }}
         >
+            <SEOHead 
+                title="Affiliate Program | Earn with Social Sentry"
+                description="Join the Social Sentry Affiliate Program. Earn commissions by helping students and professionals reclaim their focus with our AI app blocker."
+                keywords="Social Sentry affiliate program, earn money, promote app blocker, partner program AI app"
+                canonicalUrl="https://socialsentry.online/affiliate"
+            />
             {/* Dark overlay */}
             <div className="fixed inset-0 bg-background/85 pointer-events-none" />
 
