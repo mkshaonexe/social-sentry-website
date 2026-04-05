@@ -31,6 +31,7 @@ const SocialSentryNavbar = () => {
                         <Link to="/pricing" className="hover:text-primary transition-colors">Pricing</Link>
                         <Link to="/about-us" className="hover:text-primary transition-colors">About Us</Link>
                         <Link to="/affiliate" className="hover:text-primary transition-colors">Affiliate</Link>
+                        <Link to="/tutorial" target="_blank" className="hover:text-primary transition-colors">Tutorial</Link>
                     </div>
 
                     {/* CTA */}
