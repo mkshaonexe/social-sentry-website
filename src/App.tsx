@@ -6,6 +6,7 @@ import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import Pricing from "@/pages/Pricing";
 import AboutUs from "@/pages/AboutUs";
 import Affiliate from "@/pages/Affiliate";
+import TutorialRedirect from "@/pages/TutorialRedirect";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/affiliate" element={<Affiliate />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/tutorial" element={<TutorialRedirect />} />
       </Routes>
       <SocialSentryFooter />
     </Router>
