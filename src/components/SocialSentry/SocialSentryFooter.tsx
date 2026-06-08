@@ -19,6 +19,7 @@ const SocialSentryFooter = () => {
                         <Link to="/about-us" className="hover:text-foreground transition-colors">About Us</Link>
                         <Link to="/affiliate" className="hover:text-foreground transition-colors">Affiliate</Link>
                         <Link to="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy</Link>
+                        <Link to="/refund-policy" className="hover:text-foreground transition-colors">Refund Policy</Link>
                         <a
                             href="https://play.google.com/store/apps/details?id=com.socialsentry.ai"
                             target="_blank"

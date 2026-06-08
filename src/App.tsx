@@ -3,6 +3,7 @@ import SocialSentryNavbar from "@/components/SocialSentry/SocialSentryNavbar";
 import SocialSentryFooter from "@/components/SocialSentry/SocialSentryFooter";
 import Home from "@/pages/Home";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import RefundPolicy from "@/pages/RefundPolicy";
 import Pricing from "@/pages/Pricing";
 import AboutUs from "@/pages/AboutUs";
 import Affiliate from "@/pages/Affiliate";
@@ -18,6 +19,7 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/affiliate" element={<Affiliate />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/refund-policy" element={<RefundPolicy />} />
         <Route path="/tutorial" element={<TutorialRedirect />} />
       </Routes>
       <SocialSentryFooter />
