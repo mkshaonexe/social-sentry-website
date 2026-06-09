@@ -106,7 +106,7 @@ const PricingSection = () => {
                                 asChild
                             >
                                 <a 
-                                    href={`https://wa.me/8801710459562?text=${encodeURIComponent("i need help and i want to clear a confussion about social sentry pp app i come form the social sentry website")}`} 
+                                    href={`https://wa.me/8801805748720?text=${encodeURIComponent("i need help and i want to clear a confussion about social sentry pp app i come form the social sentry website")}`} 
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     className="flex items-center justify-center gap-2"
